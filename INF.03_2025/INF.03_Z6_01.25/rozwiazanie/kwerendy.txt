@@ -1,4 +1,0 @@
-1. SELECT `pseudonim` FROM `zawodnicy` WHERE `data_zdobycia` LIKE "2020%";
-2. SELECT `pseudonim`, `tytul` FROM `zawodnicy` WHERE `klasa` = "3A" AND `tytul` != "";
-3. SELECT `pseudonim`, `klasa`, `ranking` FROM `zawodnicy` ORDER BY (ranking) DESC LIMIT 10;
-4. SELECT `pseudonim`, `data_zdobycia`, DATEDIFF(NOW(), `data_zdobycia`) as "dni" FROM `zawodnicy` WHERE `tytul` != "";
