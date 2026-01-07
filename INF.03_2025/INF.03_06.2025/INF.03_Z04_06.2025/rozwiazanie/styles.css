@@ -1,0 +1,55 @@
+body{
+    background-color: #FFCC99;
+    font-family: Garamond;
+    text-align: center;
+}
+
+header, footer{
+    background-color: DarkGreen;
+    color: white;
+    padding: 30px;
+    font-family: 140%;
+}
+
+nav{
+    background-color: MediumSeaGreen;
+    word-spacing: 90px;
+    padding: 20px;
+}
+
+main{
+    display: flex;
+}
+
+article{
+   width: 70%;
+   height: 500px; 
+}
+
+section{
+    background-color: MediumSeaGreen;
+    width: 30%;
+    height: 500px;
+    text-align: left;
+}
+
+table{
+    border: 1px dashed DarkGreen;
+    margin: 30px auto;
+}
+
+th, td{
+    padding: 5px;
+}
+
+a{
+    color: white;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+tr:hover{
+    background-color: darkgreen;
+}
