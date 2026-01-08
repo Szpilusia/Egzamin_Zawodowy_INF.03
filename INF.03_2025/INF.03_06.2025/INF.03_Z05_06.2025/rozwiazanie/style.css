@@ -1,0 +1,70 @@
+* {
+  font-family: Arial;
+}
+
+body {
+  background-color: BlanchedAlmond;
+}
+
+header,
+footer {
+  background-color: Sienna;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 130%;
+}
+
+aside {
+  background-color: NavajoWhite;
+  margin: 10px;
+  padding: 20px;
+  width: 35%;
+  height: 400px;
+  box-shadow: 5px 5px 10px DimGray;
+  float: left;
+}
+
+nav {
+  width: 50%;
+  height: 50px;
+  float: right;
+}
+
+section {
+  width: 50%;
+  height: 420px;
+  overflow:auto;
+  float: right;
+}
+
+input,
+button {
+  margin-top: 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+img {
+  width: 10%;
+  float: left;
+}
+
+a {
+  color: Sienna;
+  margin-right: 30px;
+}
+
+a:hover {
+  color: #4c1900;
+}
+
+footer {
+  clear: both;
+}
+
+#skrypcik{
+  display: block;
+}

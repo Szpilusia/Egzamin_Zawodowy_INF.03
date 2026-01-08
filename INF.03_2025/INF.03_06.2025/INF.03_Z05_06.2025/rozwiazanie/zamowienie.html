@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Fotografia</title>
+  </head>
+  <body>
+    <!--Blok nagłówkowy-->
+    <header>
+      <h1>Fotografia artystyczna</h1>
+    </header>
+
+    <!--Blok sekcji obrazów-->
+    <article>
+      <img src="./obrazy/1.jpg" alt="obrazy do sprzedaży" title="1.jpg" />
+      <img src="./obrazy/2.jpg" alt="obrazy do sprzedaży" title="2.jpg" />
+      <img src="./obrazy/3.jpg" alt="obrazy do sprzedaży" title="3.jpg" />
+      <img src="./obrazy/4.jpg" alt="obrazy do sprzedaży" title="4.jpg" />
+      <img src="./obrazy/5.jpg" alt="obrazy do sprzedaży" title="5.jpg" />
+      <img src="./obrazy/6.jpg" alt="obrazy do sprzedaży" title="6.jpg" />
+      <img src="./obrazy/7.jpg" alt="obrazy do sprzedaży" title="7.jpg" />
+      <img src="./obrazy/8.jpg" alt="obrazy do sprzedaży" title="8.jpg" />
+      <img src="./obrazy/9.jpg" alt="obrazy do sprzedaży" title="9.jpg" />
+      <img src="./obrazy/10.jpg" alt="obrazy do sprzedaży" title="10.jpg" />
+    </article>
+
+    <!--Blok główny-->
+    <mian>
+      <!--Blok sekcji lewej-->
+      <aside>
+        <h3>Zamówienie</h3>
+        <label for="obraz">Wybierz obraz</label>
+        <input name="obraz" id="file" type="file" accept="image/jpeg" />
+        <br />
+        <label for="ilosc">Liczba Kopii:</label>
+        <input name="ilosc" id="ilosc" type="number" />
+        <br />
+        <input type="radio" id="p1" name="papier" value="blyszczacy" checked />
+        <label for="p1">Papier błyszczący</label>
+        <br />
+        <input type="radio" id="p2" name="papier" value="matowy" />
+        <label for="p2">Papier matowy</label>
+        <br />
+        <button type="button" onclick="Liczymy()">Dodaj do koszyka</button>
+      </aside>
+
+      <!--Blok nawigacyjny-->
+      <nav>
+        <ul>
+          <li><a href="./regulamin.html">Regulamin</a></li>
+          <li><a href="./uslugi.html">Usługi</a></li>
+          <li><a href="https://pixabay.com">Zdjęcia</a></li>
+        </ul>
+      </nav>
+
+      <!--Blok sekcji prawej-->
+      <section>
+        <h3>Koszyk</h3>
+        <article id="skrypcik"></article>
+      </section>
+    </mian>
+
+    <!--Stopka-->
+    <footer>
+      <p>
+        Autor strony:
+        <em>
+          <a
+            href="https://pixelpick.pl/"
+            target="_blank"
+            style="color: rgb(112, 0, 95); font-weight: bold"
+            >Szpileczka
+          </a>
+        </em>
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
