@@ -1,0 +1,54 @@
+* {
+  font-family: Georgia;
+}
+
+header,
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+article {
+  background-image: url(./images/obraz1.jpg);
+  color: DimGRay;
+  font-size: 150%;
+  height: 350px;
+  overflow: scroll;
+}
+
+section {
+  background-color: #00e676;
+  color: #1b5e20;
+  width: 28%;
+  height: 560px;
+  float: left;
+  margin: 2%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 6px DimGray;
+}
+
+section:hover {
+  background-color: #10ef84;
+}
+
+p:hover {
+  color: black;
+}
+
+h2,
+h3 {
+  color: #1b5e20;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+li {
+  list-style-image: url(./images/obraz3.png);
+}
+
+footer {
+  clear: both;
+}
