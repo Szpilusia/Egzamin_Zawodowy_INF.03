@@ -1,4 +1,0 @@
-1. SELECT `Data`, `Temat` FROM `szkolenia` ORDER BY `Data` ASC;
-2. SELECT `Data`, `Temat`, trenerzy.Imie, trenerzy.Nazwisko FROM `szkolenia` INNER JOIN trenerzy ON szkolenia.Id_trenera = trenerzy.Id;
-3. SELECT trenerzy.Imie, trenerzy.Nazwisko, COUNT(szkolenia.Id_trenera) FROM `trenerzy` INNER JOIN szkolenia ON trenerzy.Id = szkolenia.Id_trenera GROUP BY szkolenia.Id_trenera;
-4. ALTER TABLE `zapisy` CHANGE `Id_klienta` `Id_sluchacza` INT(11) NULL DEFAULT NULL;

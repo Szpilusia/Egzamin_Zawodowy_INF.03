@@ -1,4 +1,0 @@
-1. SELECT MAX(`priorytet`) FROM `notatki` WHERE `Osoby_id` = 3;
-2. SELECT `nazwa`, `priorytet` FROM `notatki` WHERE `nazwa` LIKE '%na%';
-3. SELECT osoby.imie, notatki.nazwa FROM `osoby` INNER JOIN notatki ON notatki.id = osoby.id WHERE notatki.priorytet = 5;
-4. SELECT osoby.imie, COUNT(Notatki.id) FROM Osoby JOIN Notatki ON Osoby.id = Notatki.Osoby_id GROUP BY Osoby.id;
