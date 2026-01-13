@@ -1,0 +1,4 @@
+1. SELECT `nazwa`, `opis`, `cena` FROM `nagrody` ORDER BY RAND() LIMIT 5;
+2. SELECT * FROM `nagrody` WHERE cena BETWEEN 10 AND 100 AND `ilosc_sztuk` = 2;
+3. DELETE FROM `nagrody` WHERE `cena` = 0 OR `cena` IS NULL;
+4. SELECT `nazwa`, `cena`, `data_dodania` FROM `nagrody` WHERE `data_dodania` LIKE "2021-08%" ORDER BY `data_dodania` ASC;
