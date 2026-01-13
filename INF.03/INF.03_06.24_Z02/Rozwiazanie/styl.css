@@ -1,0 +1,80 @@
+* {
+  font-family: Garamond;
+}
+
+header {
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 80px;
+  float: left;
+}
+
+main {
+  width: 80%;
+  height: 600px;
+  float: left;
+}
+
+aside {
+  width: 20%;
+  height: 680px;
+  float: right;
+  background-color: Coral;
+}
+
+footer {
+  clear: both;
+  background-color: tomato;
+  text-align: center;
+}
+
+img {
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+  padding: 0px 10px;
+}
+
+section {
+  border: 1px solid tomato;
+  margin: 15px;
+  height: 470px;
+  overflow: scroll;
+}
+
+article {
+  border-radius: 5px;
+  width: 90%;
+  height: 70px;
+  margin: 2%;
+  padding: 3px;
+}
+
+.jola {
+  background-color: #eee;
+}
+
+.jola img {
+  float: left;
+}
+
+.krzys {
+  background-color: #ccc;
+}
+
+.krzys img {
+  float: right;
+}
+
+button {
+  background-color: tomato;
+  border: 1px solid darkred;
+  padding: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 500px;
+}
