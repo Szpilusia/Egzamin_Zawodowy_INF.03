@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styl.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <header>
+      <h2>Chaty</h2>
+    </header>
+
+    <aside>
+      <h3>Chaty</h3>
+      <ul>
+        <li>Ogólny</li>
+        <li>
+          Tematyczne
+          <ol>
+            <li>Turystyczny</li>
+            <li>Żeglarski</li>
+            <li>Filatelistyczny</li>
+            <li>Hodowla zwierzątek domowych</li>
+          </ol>
+        </li>
+      </ul>
+      <h3>Uczestnicy</h3>
+      <p>Jolanta Nowak</p>
+      <img src="./Jolka.jpg" alt="Jolanta Nowak" />
+      <p>Krzysztof Łukasiński</p>
+      <img src="./Krzysiek.jpg" alt="Krzysztof Łukasiński" />
+    </aside>
+
+    <main>
+      <section id="chat">
+        <article class="jola">
+          <img src="./Jolka.jpg" />
+          <p>Cześć idziesz jutro do kina?</p>
+        </article>
+        <article class="krzys">
+          <img src="./Krzysiek.jpg" />
+          <p>Tak! A ty?</p>
+        </article>
+      </section>
+
+      <label>Wpisz wiadomość: </label>
+      <input type="text" id="mess" />
+      <button type="button" onclick="Nowy()">Wyślij</button>
+
+      <button type="button" onclick="Generuj()">
+        Generuj losową odpowiedź
+      </button>
+    </main>
+
+    <footer>
+      Chat wykonała:
+      <a
+        href="https://pixelpick.pl"
+        target="_blank"
+        style="
+          color: rgb(176, 7, 114);
+          font-weight: bold;
+          text-decoration: none;
+        "
+        >Szpileczka</a
+      >
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
