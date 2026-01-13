@@ -1,0 +1,5 @@
+1. SELECT AVG(`liczba_pracownikow`) as "średnia", MIN(`liczba_pracownikow`) as "najmniej", MAX(`liczba_pracownikow`) as "najwięcej" FROM `wykonawcy`;
+2. SELECT `nazwa_firmy`, `liczba_pracownikow` FROM `wykonawcy` WHERE `liczba_pracownikow` >= 40;
+3. SELECT DISTINCT `miasto` FROM `klienci` ORDER BY `miasto` ASC;
+4. SELECT `imie`, zlecenia.cena FROM `klienci` INNER JOIN zlecenia ON klienci.id_klienta = zlecenia.id_klienta WHERE klienci.miasto = "Poznań" AND zlecenia.rodzaj = "malowanie";
+5. SELECT `imie`, wykonawcy.nazwa_firmy FROM `klienci` INNER JOIN wykonawcy ON klienci.id_klienta = wykonawcy.id_wykonawcy;
