@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Firma szkoleniowa</title>
+</head>
+<body>
+    <!--Fragment polecenia -> ,,Strona składa się z kontenera, a w nim podział na bloki: nagłówkowy, poniżej obok siebie menu i główny, na dole stopka.'' -->
+    <section>
+
+
+        <!--nagłówek-->
+        <header>
+            <img src="./baner.jpg" alt="Szkolenia">
+        </header>
+
+
+        <!--menu-->
+        <aside>
+            <ul>
+                <li>
+                    <a href="./index.html">Strona główna</a>
+                </li>
+                <li>
+                    <a href="./szkolenia.php">Szkolenia</a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <!--blok główny ze skryptem-->
+        <main>
+            <?php 
+                $conn = mysqli_connect("localhost", "root", "", "firma");
+                $request = "SELECT `Data`, `Temat` FROM `szkolenia` ORDER BY `Data` ASC";
+                $response = mysqli_query($conn, $request);
+                $toFile = fopen("./harmonogram.txt", "w");
+                while($row = mysqli_fetch_array($response)){
+                    echo "<p>".$row['Data']." ".$row['Temat']."</p>";
+
+                    $text = "".$row['Data']." ".$row['Temat']."\n";
+                    fwrite($toFile, $text);
+                }
+                
+                fclose($toFile);
+                mysqli_close($conn);
+            ?>
+        </main>
+
+
+        <!--stopeczka :)-->
+        <footer>
+            <h2>Firma szkoleniowa, ul. Główna 1, 23-456 Warszawa</h2>
+            <p>Autor: <a href="https://pixelpick.pl/" target="_blank" style="color: rgb(120, 1, 85);">Szpileczka</a></p>
+        </footer>
+    </section>
+</body>
+</html>

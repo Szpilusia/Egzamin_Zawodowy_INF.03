@@ -1,0 +1,53 @@
+* {
+  font-family: Helvetica;
+}
+
+body {
+  background-color: lightsalmon;
+  text-align: center;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  height: 400px;
+}
+
+article {
+  background-color: darksalmon;
+  float: left;
+  width: 30%;
+  height: 100px;
+}
+
+section {
+  background-color: darksalmon;
+  width: 70%;
+  height: 500px;
+  overflow: auto;
+  float: right;
+}
+
+img {
+  width: 100%;
+}
+
+#tekstFiltra {
+  font-size: 200%;
+  padding: 10px;
+  font-style: italic;
+}
+
+#tekstFiltra:hover {
+  color: ghostwhite;
+}
+
+table,
+td {
+  border: 1px dotted Maroon;
+}
+
+table {
+  width: 70%;
+  margin: auto;
+}
