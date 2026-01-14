@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styl.css" />
+    <title>Sklep - rejestracja</title>
+  </head>
+  <body>
+    <!--Blok boczny-->
+    <aside>
+      <img src="./obraz.png" alt="promocje" />
+      <h2>Sprawdź promocje</h2>
+      <table>
+        <tr>
+          <th>co?</th>
+          <th>ile taniej?</th>
+        </tr>
+        <tr>
+          <td>ubrania</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>buty</td>
+          <td>25%</td>
+        </tr>
+        <hr />
+      </table>
+    </aside>
+
+    <!--Blok nagłówkowy-->
+    <header>
+      <h1>Zarejestruj się w sklepie</h1>
+    </header>
+
+    <!--Blok główny-->
+    <main>
+      <button onclick="Tab(1)">Klient</button>
+      <button onclick="Tab(2)">Adres</button>
+      <button onclick="Tab(3)">Kontakt</button>
+
+      <section id="s1">
+        <p>Imię</p>
+        <br />
+        <input
+          type="text"
+          id="imie"
+          placeholder="Wpisz dane"
+          onfocusout="Dodawanie()"
+        />
+
+        <p>Nazwisko</p>
+        <br />
+        <input type="text" id="nazwisko" onfocusout="Dodawanie()" />
+
+        <p>Data urodzenia</p>
+        <br />
+        <input type="date" id="urodzenie" onfocusout="Dodawanie()" />
+      </section>
+
+      <section id="s2">
+        <p>Ulica</p>
+        <br />
+        <input type="text" id="ulica" onfocusout="Dodawanie()" />
+
+        <p>Numer</p>
+        <br />
+        <input type="number" id="dom" onfocusout="Dodawanie()" />
+
+        <p>Miasto</p>
+        <br />
+        <input type="text" id="miasto" onfocusout="Dodawanie()" />
+      </section>
+
+      <section id="s3">
+        <p>Numer komórkowy</p>
+        <input type="number" id="tel" onfocusout="Dodawanie()" /><br />
+        <input type="checkbox" id="rodo" onfocusout="Dodawanie()" /><label
+          >Akceptuję RODO</label
+        ><br />
+        <button type="button" onclick="Dane()" ; onfocusout="Dodawanie()">
+          Zatwierdź dane
+        </button>
+      </section>
+    </main>
+
+    <article id="pasekPostepu">
+      <section id="postep"></section>
+    </article>
+    <!--Blok stopki-->
+    <footer>
+      <h4>
+        Rejestrację do sklepu wykonał:
+        <a
+          href="https://pixelpick.pl/"
+          target="_blank"
+          style="color: rgb(168, 0, 95)"
+        ></a>
+      </h4>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
