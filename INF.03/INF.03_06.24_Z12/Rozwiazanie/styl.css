@@ -1,0 +1,53 @@
+*{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+header, footer{
+    background-color: indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+}
+
+section{
+    width: 50%;
+    height: 470px;
+    float: left;
+}
+
+img{
+    padding: 3px;
+    margin: 10xp;
+    border: 2px dashed slateblue;
+}
+
+a{
+    color: white;
+}
+
+button{
+    background-color: SlateBlue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: indigo;
+}
+
+input[type="range"]{
+    width: 80%;
+}
+
+footer{
+    clear: both;
+}
+
+footer a b{
+    color: rgb(215, 0, 154);
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+
+}

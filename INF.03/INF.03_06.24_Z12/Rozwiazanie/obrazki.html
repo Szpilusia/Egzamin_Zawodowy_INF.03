@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styl.css" />
+    <title>Efekty obrazu</title>
+  </head>
+  <body>
+    <!--Blok nagłówka-->
+    <header>
+      <h2>Efekty na obrazach</h2>
+    </header>
+
+    <!--4 Bloki-->
+    <section id="s1">
+      <img
+        id="imgs1"
+        src="./images/pszczola.jpg"
+        alt="pszczoła na fioletowym kwiatku"
+      />
+
+      <br />
+      <input type="radio" name="motyw" id="blur"/>
+      <label for="blur">Blur</label>
+      <br />
+      <input type="radio" name="motyw" id="sepia"/>
+      <label for="sepia">Sepia</label>
+      <br />
+      <input type="radio" name="motyw" id="negatyw"/>
+      <label for="negatyw">Negatyw</label>
+      <br />
+
+      <button type="button" onclick="Function1()">Zastosuj</button>
+    </section>
+
+    <section id="s2">
+      <img id="imgs2" src="./images/pomarancza.jpg" alt="drzewo pomarańczy" />
+      <br />
+      <button onclick="Function2(1)">Kolorowy</button>
+      <button onclick="Function2(2)">Czarno-biały</button>
+    </section>
+
+    <section id="s3">
+      <img id="imgs3" src="./images/owoce.jpg" alt="Kosz pełen owoców" /><br />
+      <input type="range" min="0" max="100" value="100" id="Opacity" /><br />
+      <button onclick="Function3()">Zastosuj</button>
+    </section>
+
+    <section id="s4">
+      <img id="imgs4" src="./images/zolw.jpg" alt="Żółw w wodzie" /><br />
+      <input type="range" min="0" max="250" id="Light" /><br />
+      <button onclick="Function4()">Zastosuj</button>
+    </section>
+
+    <!--Blok stopki-->
+    <footer>
+      <p>
+        <a href="http://www.css.com/" target="_blank">
+          Zobacz inne efekty obrazu
+        </a>
+      </p>
+      <p>
+        Stronę wykonała:
+        <a
+          href="https://pixelpick.pl/"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <b>Szpileczka</b>
+        </a>
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
